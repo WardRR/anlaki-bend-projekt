@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Kontaktirajte nas za nastupe, intervjue ili suradnju.">
+    <title>Kontakt - Naš Bend</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <a href="#glavni-sadrzaj" class="skip-link">Preskoči na sadržaj</a>
+
+    <header>
+        <nav>
+            <div class="logo">ROCK-BEND</div>
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="hamburger">&#9776;</label>
+            <ul class="nav-links">
+                <li><a href="index.html">Početna</a></li>
+                <li><a href="o-nama.html">O nama</a></li>
+                <li><a href="galerija.html">Galerija</a></li>
+                <li><a href="kontakt.html" class="active">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="glavni-sadrzaj">
+        <h1>Kontaktirajte nas</h1>
+        <section class="kontakt-forma">
+            <p>Ispunite obrazac i javit ćemo vam se u najkraćem roku.</p>
+            <form action="#">
+                <div class="form-group">
+                    <label for="ime">Vaše ime:</label> <input type="text" id="ime" name="ime" required> </div>
+                
+                <div class="form-group">
+                    <label for="email">E-mail adresa:</label>
+                    <input type="email" id="email" name="email" required> </div>
+
+                <div class="form-group">
+                    <label for="poruka">Vaša poruka:</label>
+                    <textarea id="poruka" name="poruka" rows="5" required></textarea>
+                </div>
+
+                <button type="submit">Pošalji poruku</button> </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Naš Bend. UNIZD SIT.</p>
+    </footer>
+</body>
+</html>
