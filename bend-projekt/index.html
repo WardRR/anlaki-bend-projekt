@@ -1,33 +1,87 @@
+<!-- ========================================
+     POČETNA STRANICA - BEND ANLAKI
+     Komentari će vam pokazati kako je sve strukturirano
+     ======================================== -->
+
+<!DOCTYPE html>
+<!-- lang="hr" znači da je stranica na hrvatskom jeziku -->
 <html lang="hr">
 <head>
+    <!-- META TAGOVI - informacije o stranici za pretraživače i uređaje -->
     <meta charset="UTF-8">
+    <!-- Ova linija osigurava da stranica koristi UTF-8 encoding (za hrvatske znakove) -->
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Službena stranica benda Anlaki - iz Zadra."> <title>Početna - Anlaki</title>
-    <link rel="stylesheet" href="css/style.css"> </head>
-<body>
-    <a href="#glavni-sadrzaj" class="skip-link">Preskoči na sadržaj</a>
+    <!-- Ova linija čini stranicu responzivnom na mobilnim uređajima -->
+    
+    <meta name="description" content="Službena stranica benda Anlaki - iz Zadra.">
+    <!-- Opis koji se pojavljuje u Google pretragama -->
+    
+    <title>Početna - Anlaki</title>
+    <!-- Naslov koji se pojavljuje u jezičcu preglednika -->
+    
+    <!-- POVEZIVANJE CSS DATOTEKE -->
+    <!-- href="css/style.css" pokazuje gdje se nalazi datoteka s dizajnom -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
 
+<body>
+    <!-- ===== HEADER (GORNJA NAVIGACIJSKA TRAKA) ===== -->
+    <!-- <header> je semantički tag - govori da je ovo zaglavlje stranice -->
     <header>
+        <!-- <nav> označava navigacijski odjeljak -->
         <nav>
+            <!-- LOGO BENDA -->
+            <!-- Koristi <div> jer je to samo dekorativni element, a koristimo CSS klasu "logo" -->
             <div class="logo">ANLAKI</div>
+            
+            <!-- HAMBURGER MENI ZA MOBILNE UREĐAJE -->
+            <!-- checkbox omogućava nam da pratimo da li je meni otvoren ili zatvoren -->
             <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <!-- label je povezan s checkboxom - klik na njega otvara/zatvara meni -->
+            <!-- &#9776; je simbol hamburger menija (三 - tri linije) -->
             <label for="menu-toggle" class="hamburger">&#9776;</label>
             
+            <!-- NAVIGACIJSKI LINKOVI -->
+            <!-- <ul> je neuređena lista (unordered list) -->
+            <!-- class="nav-links" je CSS klasa za stilizaciju -->
             <ul class="nav-links">
-                <li><a href="index.html" class="active">Početna</a></li> <li><a href="o-nama.html">O nama</a></li>
+                <!-- <li> je stavka liste -->
+                <!-- class="active" označava da je ovo trenutna stranica -->
+                <li><a href="index.html" class="active">Početna</a></li>
+                <li><a href="o-nama.html">O nama</a></li>
                 <li><a href="galerija.html">Galerija</a></li>
                 <li><a href="kontakt.html">Kontakt</a></li>
             </ul>
         </nav>
     </header>
 
+    <!-- ===== GLAVNI SADRŽAJ STRANICE ===== -->
+    <!-- <main> je semantički tag - označava glavni sadržaj stranice -->
+    <!-- id="glavni-sadrzaj" se koristi za linkove koji preskakaju na sadržaj -->
     <main id="glavni-sadrzaj">
-        <h1>Dobrodošli na službenu stranicu benda</h1> <section class="hero">
+        <!-- <h1> je najvažnije zaglavlje na stranici - trebalo bi biti samo jedno -->
+        <h1>Dobrodošli na službenu stranicu benda</h1>
+        
+        <!-- ===== HERO SEKCIJA ===== -->
+        <!-- Ovo je posebna sekcija s glavnom porukom i slikom benda -->
+        <!-- class="hero" je CSS klasa koja joj daje poseban izgled -->
+        <section class="hero">
+            <!-- <p> je paragraf teksta -->
             <p>Mi smo bend koji donosi čisti rock zvuk.</p>
-            <img src="img/bend-live.jpg" alt="Članovi benda"> </section>
+            
+            <!-- SLIKA BENDA -->
+            <!-- src="img/bend-live.jpg" je putanja do slike -->
+            <!-- alt="Članovi benda" je alternativni tekst ako slika ne učita -->
+            <!-- (Važno je za dostupnost i SEO) -->
+            <img src="img/bend-live.jpg" alt="Članovi benda">
+        </section>
     </main>
 
+    <!-- ===== FOOTER (DNO STRANICE) ===== -->
+    <!-- <footer> je semantički tag - označava dno stranice -->
     <footer>
+        <!-- &copy; je HTML entitet za © simbol -->
         <p>&copy; 2026 Anlaki - Sva prava pridržana.</p>
     </footer>
 </body>
