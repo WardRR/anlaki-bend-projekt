@@ -1,7 +1,7 @@
-# Projekt statičke stranice - Anlaki
+# Projekt statičke stranice - bend KRONOS
 
-Statički web za moj bend Anlaki
+Statički web za moj bend KRONOS
 
 Korištenje HTML i CSS
 
-Samuel Puljiz, 2005
+Samuel Puljiz, 2026.
